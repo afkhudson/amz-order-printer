@@ -7,6 +7,8 @@ import os
 import time
 from selenium.webdriver.common.keys import Keys
 
+#test
+
 class orderInfo():
     def __init__(self, sku, price, quantity):
         self.sku = sku
@@ -24,11 +26,9 @@ def buylabels():
     options.add_experimental_option("detach", True)
     options.add_argument("--user-data-dir=C:/Users/sosa/AppData/Local/Google/Chrome/User Data")
     options.add_argument('--profile-directory=Profile 2')
-    options.add_argument("--auto-open-devtools-for-tabs")
     options.add_argument("--enable-javascript")
 
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-    browser.maximize_window()
     browser.get(url)
     browser.set_page_load_timeout(20)
     time.sleep(2)
@@ -69,6 +69,7 @@ def buylabels():
                     checkbox.click()
     get_skus()
     prep_labels()
+    input("PRESS ENTER TO CLOSE")
 
 buylabels()
 
