@@ -73,18 +73,4 @@ def buylabels():
 
 buylabels()
 
-#open browser - amazon seller central
-
-#find first buy shipping button
-
-#while there is a buy shipping button -> buy shipping
-
-#click buy shipping
-
-#choose label+packing list
-
-#purchase
-
-#print label
-
-#repeat
+#hello :)
